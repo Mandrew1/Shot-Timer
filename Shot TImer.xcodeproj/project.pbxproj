@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B3D49311F20F2B500BE5242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D49301F20F2B500BE5242 /* AppDelegate.swift */; };
+		8B3D49331F20F2B500BE5242 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D49321F20F2B500BE5242 /* ViewController.swift */; };
+		8B3D49361F20F2B500BE5242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D49341F20F2B500BE5242 /* Main.storyboard */; };
+		8B3D49381F20F2B500BE5242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D49371F20F2B500BE5242 /* Assets.xcassets */; };
+		8B3D493B1F20F2B500BE5242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D49391F20F2B500BE5242 /* LaunchScreen.storyboard */; };
+		8B3D49461F20F2B500BE5242 /* Shot_TImerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D49451F20F2B500BE5242 /* Shot_TImerTests.swift */; };
+		8B3D49511F20F2B500BE5242 /* Shot_TImerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D49501F20F2B500BE5242 /* Shot_TImerUITests.swift */; };
+		8B3D49561F20F2B500BE5242 /* Shot TImer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B3D49551F20F2B500BE5242 /* Shot TImer WatchKit App.app */; };
+		8B3D495C1F20F2B500BE5242 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D495A1F20F2B500BE5242 /* Interface.storyboard */; };
+		8B3D495E1F20F2B500BE5242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D495D1F20F2B500BE5242 /* Assets.xcassets */; };
+		8B3D49651F20F2B500BE5242 /* Shot TImer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B3D49641F20F2B500BE5242 /* Shot TImer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B3D496C1F20F2B500BE5242 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D496B1F20F2B500BE5242 /* InterfaceController.swift */; };
+		8B3D496E1F20F2B500BE5242 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D496D1F20F2B500BE5242 /* ExtensionDelegate.swift */; };
+		8B3D49701F20F2B500BE5242 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D496F1F20F2B500BE5242 /* NotificationController.swift */; };
+		8B3D49721F20F2B500BE5242 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D49711F20F2B500BE5242 /* ComplicationController.swift */; };
+		8B3D49741F20F2B500BE5242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D49731F20F2B500BE5242 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B3D49421F20F2B500BE5242 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3D49251F20F2B500BE5242 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B3D492C1F20F2B500BE5242;
+			remoteInfo = "Shot TImer";
+		};
+		8B3D494D1F20F2B500BE5242 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3D49251F20F2B500BE5242 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B3D492C1F20F2B500BE5242;
+			remoteInfo = "Shot TImer";
+		};
+		8B3D49571F20F2B500BE5242 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3D49251F20F2B500BE5242 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B3D49541F20F2B500BE5242;
+			remoteInfo = "Shot TImer WatchKit App";
+		};
+		8B3D49661F20F2B500BE5242 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3D49251F20F2B500BE5242 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B3D49631F20F2B500BE5242;
+			remoteInfo = "Shot TImer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B3D497B1F20F2B500BE5242 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B3D49651F20F2B500BE5242 /* Shot TImer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3D497F1F20F2B500BE5242 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8B3D49561F20F2B500BE5242 /* Shot TImer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B3D492D1F20F2B500BE5242 /* Shot TImer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shot TImer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3D49301F20F2B500BE5242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B3D49321F20F2B500BE5242 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B3D49351F20F2B500BE5242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B3D49371F20F2B500BE5242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B3D493A1F20F2B500BE5242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B3D493C1F20F2B500BE5242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3D49411F20F2B500BE5242 /* Shot TImerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shot TImerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3D49451F20F2B500BE5242 /* Shot_TImerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot_TImerTests.swift; sourceTree = "<group>"; };
+		8B3D49471F20F2B500BE5242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3D494C1F20F2B500BE5242 /* Shot TImerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shot TImerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3D49501F20F2B500BE5242 /* Shot_TImerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot_TImerUITests.swift; sourceTree = "<group>"; };
+		8B3D49521F20F2B500BE5242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3D49551F20F2B500BE5242 /* Shot TImer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shot TImer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3D495B1F20F2B500BE5242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8B3D495D1F20F2B500BE5242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B3D495F1F20F2B500BE5242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3D49641F20F2B500BE5242 /* Shot TImer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Shot TImer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3D496A1F20F2B500BE5242 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8B3D496B1F20F2B500BE5242 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8B3D496D1F20F2B500BE5242 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8B3D496F1F20F2B500BE5242 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8B3D49711F20F2B500BE5242 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		8B3D49731F20F2B500BE5242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B3D49751F20F2B500BE5242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B3D492A1F20F2B500BE5242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3D493E1F20F2B500BE5242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3D49491F20F2B500BE5242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3D49611F20F2B500BE5242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B3D49241F20F2B500BE5242 = {
+			isa = PBXGroup;
+			children = (
+				8B3D492F1F20F2B500BE5242 /* Shot TImer */,
+				8B3D49441F20F2B500BE5242 /* Shot TImerTests */,
+				8B3D494F1F20F2B500BE5242 /* Shot TImerUITests */,
+				8B3D49591F20F2B500BE5242 /* Shot TImer WatchKit App */,
+				8B3D49681F20F2B500BE5242 /* Shot TImer WatchKit Extension */,
+				8B3D492E1F20F2B500BE5242 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B3D492E1F20F2B500BE5242 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D492D1F20F2B500BE5242 /* Shot TImer.app */,
+				8B3D49411F20F2B500BE5242 /* Shot TImerTests.xctest */,
+				8B3D494C1F20F2B500BE5242 /* Shot TImerUITests.xctest */,
+				8B3D49551F20F2B500BE5242 /* Shot TImer WatchKit App.app */,
+				8B3D49641F20F2B500BE5242 /* Shot TImer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B3D492F1F20F2B500BE5242 /* Shot TImer */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D49301F20F2B500BE5242 /* AppDelegate.swift */,
+				8B3D49321F20F2B500BE5242 /* ViewController.swift */,
+				8B3D49341F20F2B500BE5242 /* Main.storyboard */,
+				8B3D49371F20F2B500BE5242 /* Assets.xcassets */,
+				8B3D49391F20F2B500BE5242 /* LaunchScreen.storyboard */,
+				8B3D493C1F20F2B500BE5242 /* Info.plist */,
+			);
+			path = "Shot TImer";
+			sourceTree = "<group>";
+		};
+		8B3D49441F20F2B500BE5242 /* Shot TImerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D49451F20F2B500BE5242 /* Shot_TImerTests.swift */,
+				8B3D49471F20F2B500BE5242 /* Info.plist */,
+			);
+			path = "Shot TImerTests";
+			sourceTree = "<group>";
+		};
+		8B3D494F1F20F2B500BE5242 /* Shot TImerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D49501F20F2B500BE5242 /* Shot_TImerUITests.swift */,
+				8B3D49521F20F2B500BE5242 /* Info.plist */,
+			);
+			path = "Shot TImerUITests";
+			sourceTree = "<group>";
+		};
+		8B3D49591F20F2B500BE5242 /* Shot TImer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D495A1F20F2B500BE5242 /* Interface.storyboard */,
+				8B3D495D1F20F2B500BE5242 /* Assets.xcassets */,
+				8B3D495F1F20F2B500BE5242 /* Info.plist */,
+			);
+			path = "Shot TImer WatchKit App";
+			sourceTree = "<group>";
+		};
+		8B3D49681F20F2B500BE5242 /* Shot TImer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D496B1F20F2B500BE5242 /* InterfaceController.swift */,
+				8B3D496D1F20F2B500BE5242 /* ExtensionDelegate.swift */,
+				8B3D496F1F20F2B500BE5242 /* NotificationController.swift */,
+				8B3D49711F20F2B500BE5242 /* ComplicationController.swift */,
+				8B3D49731F20F2B500BE5242 /* Assets.xcassets */,
+				8B3D49751F20F2B500BE5242 /* Info.plist */,
+				8B3D49691F20F2B500BE5242 /* Supporting Files */,
+			);
+			path = "Shot TImer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8B3D49691F20F2B500BE5242 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D496A1F20F2B500BE5242 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B3D492C1F20F2B500BE5242 /* Shot TImer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3D49801F20F2B500BE5242 /* Build configuration list for PBXNativeTarget "Shot TImer" */;
+			buildPhases = (
+				8B3D49291F20F2B500BE5242 /* Sources */,
+				8B3D492A1F20F2B500BE5242 /* Frameworks */,
+				8B3D492B1F20F2B500BE5242 /* Resources */,
+				8B3D497F1F20F2B500BE5242 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3D49581F20F2B500BE5242 /* PBXTargetDependency */,
+			);
+			name = "Shot TImer";
+			productName = "Shot TImer";
+			productReference = 8B3D492D1F20F2B500BE5242 /* Shot TImer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B3D49401F20F2B500BE5242 /* Shot TImerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3D49831F20F2B500BE5242 /* Build configuration list for PBXNativeTarget "Shot TImerTests" */;
+			buildPhases = (
+				8B3D493D1F20F2B500BE5242 /* Sources */,
+				8B3D493E1F20F2B500BE5242 /* Frameworks */,
+				8B3D493F1F20F2B500BE5242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3D49431F20F2B500BE5242 /* PBXTargetDependency */,
+			);
+			name = "Shot TImerTests";
+			productName = "Shot TImerTests";
+			productReference = 8B3D49411F20F2B500BE5242 /* Shot TImerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B3D494B1F20F2B500BE5242 /* Shot TImerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3D49861F20F2B500BE5242 /* Build configuration list for PBXNativeTarget "Shot TImerUITests" */;
+			buildPhases = (
+				8B3D49481F20F2B500BE5242 /* Sources */,
+				8B3D49491F20F2B500BE5242 /* Frameworks */,
+				8B3D494A1F20F2B500BE5242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3D494E1F20F2B500BE5242 /* PBXTargetDependency */,
+			);
+			name = "Shot TImerUITests";
+			productName = "Shot TImerUITests";
+			productReference = 8B3D494C1F20F2B500BE5242 /* Shot TImerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8B3D49541F20F2B500BE5242 /* Shot TImer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3D497C1F20F2B500BE5242 /* Build configuration list for PBXNativeTarget "Shot TImer WatchKit App" */;
+			buildPhases = (
+				8B3D49531F20F2B500BE5242 /* Resources */,
+				8B3D497B1F20F2B500BE5242 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3D49671F20F2B500BE5242 /* PBXTargetDependency */,
+			);
+			name = "Shot TImer WatchKit App";
+			productName = "Shot TImer WatchKit App";
+			productReference = 8B3D49551F20F2B500BE5242 /* Shot TImer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8B3D49631F20F2B500BE5242 /* Shot TImer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3D49781F20F2B500BE5242 /* Build configuration list for PBXNativeTarget "Shot TImer WatchKit Extension" */;
+			buildPhases = (
+				8B3D49601F20F2B500BE5242 /* Sources */,
+				8B3D49611F20F2B500BE5242 /* Frameworks */,
+				8B3D49621F20F2B500BE5242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shot TImer WatchKit Extension";
+			productName = "Shot TImer WatchKit Extension";
+			productReference = 8B3D49641F20F2B500BE5242 /* Shot TImer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B3D49251F20F2B500BE5242 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Stephen Carras";
+				TargetAttributes = {
+					8B3D492C1F20F2B500BE5242 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					8B3D49401F20F2B500BE5242 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B3D492C1F20F2B500BE5242;
+					};
+					8B3D494B1F20F2B500BE5242 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B3D492C1F20F2B500BE5242;
+					};
+					8B3D49541F20F2B500BE5242 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					8B3D49631F20F2B500BE5242 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8B3D49281F20F2B500BE5242 /* Build configuration list for PBXProject "Shot TImer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B3D49241F20F2B500BE5242;
+			productRefGroup = 8B3D492E1F20F2B500BE5242 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B3D492C1F20F2B500BE5242 /* Shot TImer */,
+				8B3D49401F20F2B500BE5242 /* Shot TImerTests */,
+				8B3D494B1F20F2B500BE5242 /* Shot TImerUITests */,
+				8B3D49541F20F2B500BE5242 /* Shot TImer WatchKit App */,
+				8B3D49631F20F2B500BE5242 /* Shot TImer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B3D492B1F20F2B500BE5242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3D493B1F20F2B500BE5242 /* LaunchScreen.storyboard in Resources */,
+				8B3D49381F20F2B500BE5242 /* Assets.xcassets in Resources */,
+				8B3D49361F20F2B500BE5242 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3D493F1F20F2B500BE5242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3D494A1F20F2B500BE5242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3D49531F20F2B500BE5242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3D495E1F20F2B500BE5242 /* Assets.xcassets in Resources */,
+				8B3D495C1F20F2B500BE5242 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3D49621F20F2B500BE5242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3D49741F20F2B500BE5242 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B3D49291F20F2B500BE5242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3D49331F20F2B500BE5242 /* ViewController.swift in Sources */,
+				8B3D49311F20F2B500BE5242 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3D493D1F20F2B500BE5242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3D49461F20F2B500BE5242 /* Shot_TImerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3D49481F20F2B500BE5242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3D49511F20F2B500BE5242 /* Shot_TImerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3D49601F20F2B500BE5242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3D49701F20F2B500BE5242 /* NotificationController.swift in Sources */,
+				8B3D49721F20F2B500BE5242 /* ComplicationController.swift in Sources */,
+				8B3D496E1F20F2B500BE5242 /* ExtensionDelegate.swift in Sources */,
+				8B3D496C1F20F2B500BE5242 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B3D49431F20F2B500BE5242 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B3D492C1F20F2B500BE5242 /* Shot TImer */;
+			targetProxy = 8B3D49421F20F2B500BE5242 /* PBXContainerItemProxy */;
+		};
+		8B3D494E1F20F2B500BE5242 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B3D492C1F20F2B500BE5242 /* Shot TImer */;
+			targetProxy = 8B3D494D1F20F2B500BE5242 /* PBXContainerItemProxy */;
+		};
+		8B3D49581F20F2B500BE5242 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B3D49541F20F2B500BE5242 /* Shot TImer WatchKit App */;
+			targetProxy = 8B3D49571F20F2B500BE5242 /* PBXContainerItemProxy */;
+		};
+		8B3D49671F20F2B500BE5242 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B3D49631F20F2B500BE5242 /* Shot TImer WatchKit Extension */;
+			targetProxy = 8B3D49661F20F2B500BE5242 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B3D49341F20F2B500BE5242 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B3D49351F20F2B500BE5242 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B3D49391F20F2B500BE5242 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B3D493A1F20F2B500BE5242 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8B3D495A1F20F2B500BE5242 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B3D495B1F20F2B500BE5242 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B3D49761F20F2B500BE5242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B3D49771F20F2B500BE5242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B3D49791F20F2B500BE5242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Shot TImer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		8B3D497A1F20F2B500BE5242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Shot TImer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		8B3D497D1F20F2B500BE5242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Shot_TImer_WatchKit_Extension;
+				INFOPLIST_FILE = "Shot TImer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		8B3D497E1F20F2B500BE5242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Shot_TImer_WatchKit_Extension;
+				INFOPLIST_FILE = "Shot TImer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		8B3D49811F20F2B500BE5242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Shot TImer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8B3D49821F20F2B500BE5242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Shot TImer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8B3D49841F20F2B500BE5242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Shot TImerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shot TImer.app/Shot TImer";
+			};
+			name = Debug;
+		};
+		8B3D49851F20F2B500BE5242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Shot TImerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shot TImer.app/Shot TImer";
+			};
+			name = Release;
+		};
+		8B3D49871F20F2B500BE5242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Shot TImerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Shot TImer";
+			};
+			name = Debug;
+		};
+		8B3D49881F20F2B500BE5242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Shot TImerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Shot TImer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B3D49281F20F2B500BE5242 /* Build configuration list for PBXProject "Shot TImer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3D49761F20F2B500BE5242 /* Debug */,
+				8B3D49771F20F2B500BE5242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B3D49781F20F2B500BE5242 /* Build configuration list for PBXNativeTarget "Shot TImer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3D49791F20F2B500BE5242 /* Debug */,
+				8B3D497A1F20F2B500BE5242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B3D497C1F20F2B500BE5242 /* Build configuration list for PBXNativeTarget "Shot TImer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3D497D1F20F2B500BE5242 /* Debug */,
+				8B3D497E1F20F2B500BE5242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B3D49801F20F2B500BE5242 /* Build configuration list for PBXNativeTarget "Shot TImer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3D49811F20F2B500BE5242 /* Debug */,
+				8B3D49821F20F2B500BE5242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B3D49831F20F2B500BE5242 /* Build configuration list for PBXNativeTarget "Shot TImerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3D49841F20F2B500BE5242 /* Debug */,
+				8B3D49851F20F2B500BE5242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B3D49861F20F2B500BE5242 /* Build configuration list for PBXNativeTarget "Shot TImerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3D49871F20F2B500BE5242 /* Debug */,
+				8B3D49881F20F2B500BE5242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B3D49251F20F2B500BE5242 /* Project object */;
+}
