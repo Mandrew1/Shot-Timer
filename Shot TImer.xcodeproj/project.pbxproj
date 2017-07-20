@@ -23,6 +23,7 @@
 		8B3D49701F20F2B500BE5242 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D496F1F20F2B500BE5242 /* NotificationController.swift */; };
 		8B3D49721F20F2B500BE5242 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D49711F20F2B500BE5242 /* ComplicationController.swift */; };
 		8B3D49741F20F2B500BE5242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D49731F20F2B500BE5242 /* Assets.xcassets */; };
+		8B3D49901F21066200BE5242 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D498F1F21066200BE5242 /* Button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		8B3D49711F20F2B500BE5242 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		8B3D49731F20F2B500BE5242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3D49751F20F2B500BE5242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3D498F1F21066200BE5242 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button.png; path = ../../../Downloads/Button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		8B3D49591F20F2B500BE5242 /* Shot TImer WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				8B3D498F1F21066200BE5242 /* Button.png */,
 				8B3D495A1F20F2B500BE5242 /* Interface.storyboard */,
 				8B3D495D1F20F2B500BE5242 /* Assets.xcassets */,
 				8B3D495F1F20F2B500BE5242 /* Info.plist */,
@@ -407,6 +410,7 @@
 			files = (
 				8B3D495E1F20F2B500BE5242 /* Assets.xcassets in Resources */,
 				8B3D495C1F20F2B500BE5242 /* Interface.storyboard in Resources */,
+				8B3D49901F21066200BE5242 /* Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
