@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,20 +9,29 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Start Delay Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Shot_TImer_WatchKit_App" customModuleProvider="target">
+                <controller identifier="Start Delay Controller" id="AgC-eL-Hgc" customClass="StartInterfaceController" customModule="Shot_TImer_WatchKit_Extension">
                     <items>
-                        <label width="136" height="30" alignment="left" text="Select A Starting Delay" textAlignment="center" minimumScaleFactor="0.0" id="mzl-rz-HhC">
+                        <label width="136" height="25" alignment="left" text="Starting Delay" textAlignment="center" minimumScaleFactor="0.0" id="mzl-rz-HhC">
                             <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
                         </label>
-                        <group width="136" alignment="left" id="1Jw-z7-tu4">
+                        <button width="136" height="44" alignment="center" verticalAlignment="bottom" title="Random Start " backgroundImage="Big Button" id="Y1Q-8e-YXL">
+                            <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="randomStartPress" destination="AgC-eL-Hgc" id="K6p-zh-wRw"/>
+                            </connections>
+                        </button>
+                        <group width="136" alignment="center" id="1Jw-z7-tu4">
                             <items>
-                                <separator height="46" alignment="left" id="9ex-RH-4Qy">
-                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </separator>
-                                <button width="54" height="49" alignment="left" title="1" backgroundImage="Button" id="biM-B4-yZz"/>
+                                <button width="54" height="49" alignment="left" title="2s" backgroundImage="Button" id="biM-B4-yZz">
+                                    <connections>
+                                        <action selector="presetOnePress" destination="AgC-eL-Hgc" id="B2l-Ew-2CL"/>
+                                    </connections>
+                                </button>
                                 <separator height="46" alignment="left" id="lcF-tf-LR1">
                                     <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </separator>
@@ -38,7 +47,11 @@
                                 <separator height="46" alignment="left" id="9JO-1G-iiJ">
                                     <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </separator>
-                                <button width="54" height="49" alignment="left" title="2" backgroundImage="Button" id="6fi-Of-brb"/>
+                                <button width="54" height="49" alignment="right" title="3s" backgroundImage="Button" id="6fi-Of-brb">
+                                    <connections>
+                                        <action selector="presetTwoPress" destination="AgC-eL-Hgc" id="XwZ-8j-RYh"/>
+                                    </connections>
+                                </button>
                                 <separator height="46" alignment="left" id="VGK-1v-ddN">
                                     <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </separator>
@@ -47,19 +60,29 @@
                                 </separator>
                             </items>
                         </group>
-                        <group width="136" alignment="left" id="QZe-qM-rlM">
+                        <separator alignment="left" id="TbM-9N-BCR">
+                            <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <separator alignment="left" id="sPJ-f4-qMj">
+                            <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <separator alignment="left" id="deS-Cl-RkW">
+                            <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="136" alignment="center" verticalAlignment="center" id="QZe-qM-rlM">
                             <items>
-                                <separator height="46" alignment="left" id="8eq-tF-WsS">
-                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </separator>
-                                <button width="54" height="49" alignment="left" title="3" backgroundImage="Button" id="FbL-j2-VWc"/>
+                                <button width="54" height="49" alignment="left" title="4s" backgroundImage="Button" id="FbL-j2-VWc">
+                                    <connections>
+                                        <action selector="presetThreePress" destination="AgC-eL-Hgc" id="nTZ-15-Wl8"/>
+                                    </connections>
+                                </button>
                                 <separator height="46" alignment="left" id="uIX-ZG-A2g">
                                     <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </separator>
-                                <separator height="46" alignment="left" id="sTc-bo-q5E">
+                                <separator height="46" alignment="left" id="gyB-o5-OyK">
                                     <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </separator>
-                                <separator height="46" alignment="left" id="gyB-o5-OyK">
+                                <separator height="46" alignment="left" id="sTc-bo-q5E">
                                     <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </separator>
                                 <separator height="46" alignment="left" id="iaY-dg-CAR">
@@ -68,24 +91,230 @@
                                 <separator height="46" alignment="left" id="gF7-sb-1RT">
                                     <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </separator>
-                                <button width="54" height="49" alignment="left" title="4" backgroundImage="Button" id="pcH-Bk-YpY"/>
                                 <separator height="46" alignment="left" id="faj-eE-Iz1">
                                     <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </separator>
                                 <separator height="46" alignment="left" id="cmz-Zj-OL9">
                                     <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </separator>
+                                <button width="54" height="49" alignment="right" title="5s" backgroundImage="Button" id="pcH-Bk-YpY">
+                                    <connections>
+                                        <action selector="presetFourPress" destination="AgC-eL-Hgc" id="leS-8U-tS6"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <separator alignment="left" hidden="YES" id="GPX-eq-5YI"/>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="190" y="321"/>
+        </scene>
+        <!--Par TIme Controller-->
+        <scene sceneID="Agh-J0-4bu">
+            <objects>
+                <controller identifier="Par TIme Controller" id="Ly7-P7-sJb" customClass="ParTimeInterfaceController" customModule="Shot_TImer_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="14" alignment="left" text="Par Time" textAlignment="center" id="epI-Ra-tF5">
+                            <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <group width="136" alignment="center" id="Fg9-YL-KYP">
+                            <items>
+                                <button width="54" height="49" alignment="left" title="1s" backgroundImage="Button" id="MOA-lr-vLp">
+                                    <connections>
+                                        <action selector="parPresetOne" destination="Ly7-P7-sJb" id="7yS-Rq-E3p"/>
+                                    </connections>
+                                </button>
+                                <separator height="46" alignment="left" id="4B9-Ck-56h">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="dmE-jB-xRV">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="Rit-Jl-qGb">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="nFE-aF-5Gk">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="q2Q-Vq-ZVi">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <button width="54" height="49" alignment="right" title="2s" backgroundImage="Button" id="sBJ-19-U96">
+                                    <connections>
+                                        <action selector="parPresetTwo" destination="Ly7-P7-sJb" id="weS-fd-HGa"/>
+                                    </connections>
+                                </button>
+                                <separator height="46" alignment="left" id="aF5-QF-oyY">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="dOB-dK-LwN">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                        </group>
+                        <group width="136" alignment="center" id="Etb-Ka-ZV0">
+                            <items>
+                                <button width="54" height="49" alignment="left" title="3s" backgroundImage="Button" id="Oui-7N-GQO">
+                                    <connections>
+                                        <action selector="parPresetThree" destination="Ly7-P7-sJb" id="Ave-ob-vpu"/>
+                                    </connections>
+                                </button>
+                                <separator height="46" alignment="left" id="ajh-RT-wD4">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="hyh-kq-Nwv">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="2F1-X4-IhI">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="6uH-5x-z7z">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="PGj-Rz-KUs">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <button width="54" height="49" alignment="right" title="4s" backgroundImage="Button" id="Q5h-IL-x8G">
+                                    <connections>
+                                        <action selector="parPresetFour" destination="Ly7-P7-sJb" id="LQL-JQ-udM"/>
+                                    </connections>
+                                </button>
+                                <separator height="46" alignment="left" id="TpT-Bo-s2a">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="Zx1-qE-O6Y">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                        </group>
+                        <button width="136" height="44" alignment="center" verticalAlignment="bottom" title="Custom Time " backgroundImage="Big Button" id="Cgd-lG-C73">
+                            <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="customTimeButton" destination="Ly7-P7-sJb" id="kLO-4B-lLy"/>
+                            </connections>
+                        </button>
+                        <group width="136" alignment="center" id="QMQ-yO-pO4">
+                            <items>
+                                <button width="54" height="49" alignment="left" title="5s" backgroundImage="Button" id="3Nk-mx-nIQ">
+                                    <connections>
+                                        <action selector="parPresetFive" destination="Ly7-P7-sJb" id="3b4-Wi-7RK"/>
+                                    </connections>
+                                </button>
+                                <separator height="46" alignment="left" id="l1h-k6-Snt">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="pDh-Bb-1ZA">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="YWB-d3-F9c">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="05n-q0-hGj">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="gJX-FF-qsf">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <button width="54" height="49" alignment="right" title="6s" backgroundImage="Button" id="wk3-ym-tY8">
+                                    <connections>
+                                        <action selector="parPresetSix" destination="Ly7-P7-sJb" id="ZYS-BR-9sn"/>
+                                    </connections>
+                                </button>
+                                <separator height="46" alignment="left" id="Y73-3g-mCl">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <separator height="46" alignment="left" id="vUl-yP-9bt">
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
                             </items>
                         </group>
                     </items>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="320"/>
+        </scene>
+        <!--Ready Interface Controller-->
+        <scene sceneID="AZS-mQ-U6A">
+            <objects>
+                <controller identifier="Ready Interface Controller" id="sWr-dP-TL6" customClass="ReadyInterfaceController" customModule="Shot_TImer_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="52" alignment="left" text="Shooter Ready?" textAlignment="center" id="ZoU-5u-343">
+                            <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="136" height="44" alignment="center" verticalAlignment="bottom" title="Start" backgroundImage="Big Button" id="gcP-kf-GMC">
+                            <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="startPressed" destination="sWr-dP-TL6" id="PGJ-6D-Cif"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="823" y="320"/>
+        </scene>
+        <!--Picker Interface Controller-->
+        <scene sceneID="a7z-nn-JLj">
+            <objects>
+                <controller identifier="Picker Interface Controller" id="20n-18-YDC" customClass="PickerInterfaceController" customModule="Shot_TImer_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="33" alignment="left" text="Select Time" textAlignment="center" id="E8o-pt-3VK">
+                            <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <group width="1" alignment="left" verticalAlignment="center" id="dUs-5E-8H0">
+                            <items>
+                                <picker width="52" height="58" alignment="left" id="Hkv-o5-ST1">
+                                    <accessibilityTraits key="accessibilityTraits" playsSound="YES" updatesFrequently="YES" adjustable="YES"/>
+                                    <connections>
+                                        <action selector="secondPicked:" destination="20n-18-YDC" id="BFW-pb-87v"/>
+                                    </connections>
+                                </picker>
+                                <picker width="52" height="58" alignment="right" id="gRf-vV-FE9" colorLabel="IBBuiltInLabel-Orange">
+                                    <accessibilityTraits key="accessibilityTraits" playsSound="YES" updatesFrequently="YES" adjustable="YES"/>
+                                    <connections>
+                                        <action selector="millisecondPicked:" destination="20n-18-YDC" id="ZS2-1Z-Hvc"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <button width="136" height="44" alignment="center" verticalAlignment="bottom" title="Confirm" backgroundImage="Big Button" id="gMJ-eq-RoN">
+                            <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="confirmButtonPress" destination="20n-18-YDC" id="km2-tp-q6k"/>
+                            </connections>
+                        </button>
+                    </items>
                     <connections>
-                        <outlet property="presetOne" destination="biM-B4-yZz" id="CPn-5H-F3n"/>
-                        <outlet property="presetTwo" destination="6fi-Of-brb" id="0Nn-bY-IQL"/>
+                        <outlet property="millisecondsPicker" destination="gRf-vV-FE9" id="0hO-MR-GZ7"/>
+                        <outlet property="secondsPicker" destination="Hkv-o5-ST1" id="W9p-CT-HPg"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="330"/>
+            <point key="canvasLocation" x="468" y="733"/>
+        </scene>
+        <!--Timer Interface Controller-->
+        <scene sceneID="tda-HM-lwe">
+            <objects>
+                <controller identifier="Timer Interface Controller" id="793-di-50q" customClass="TimerInterfaceController" customModule="Shot_TImer_WatchKit_Extension">
+                    <items>
+                        <timer width="136" height="53" alignment="left" verticalAlignment="center" textAlignment="center" enabled="YES" id="zRn-PJ-Cl1">
+                            <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="44"/>
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                    </items>
+                    <connections>
+                        <outlet property="countDown" destination="zRn-PJ-Cl1" id="cjA-5A-QEB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1181" y="320"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -101,14 +330,15 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="143" y="1320"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Shot_TImer_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="468" y="1310"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
