@@ -18,7 +18,7 @@ class TimerInterfaceController: WKInterfaceController {
     var startD : Double = 0
     var parT : Double = 0
     
-    var countDate : Date? = Date()
+    var countDate : NSDate = NSDate()
     var intervalRate : TimeInterval = 0.1
     
     override func awake(withContext context: Any?) {
@@ -30,16 +30,12 @@ class TimerInterfaceController: WKInterfaceController {
         parT = parTandStartD[1]
         
         
+        countDate = NSDate.init(timeIntervalSinceNow: intervalRate)
         
+       
         
-        countDown.setDate(NSDate(NSDate.init(timeIntervalSinceNow: parT))
-        
-        //count
-        
-       // countDate!.addTimeInterval(intervalRate)
-        
-       // countDown.setDate(countDate!)
-       // countDown.start()
+       countDown.setDate(countDate as Date)
+       countDown.start()
         // Configure interface objects here.
     }
 
