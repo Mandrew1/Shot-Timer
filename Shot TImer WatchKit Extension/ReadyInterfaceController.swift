@@ -46,6 +46,7 @@ class ReadyInterfaceController: WKInterfaceController {
         startDAndParT.append(startDelay)
         startDAndParT.append(parTime)
         pushController(withName: "Timer Interface Controller", context: startDAndParT)
+        WKInterfaceDevice.current().play(WKHapticType.click)
         
     }
     

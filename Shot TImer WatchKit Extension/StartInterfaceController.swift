@@ -35,22 +35,24 @@ class StartInterfaceController: WKInterfaceController  {
     @IBAction func presetOnePress() {
         startDelay = 2.0;
         pushController(withName: "Par TIme Controller", context: startDelay)
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
 
     @IBAction func presetTwoPress() {
         startDelay = 3.0;
         pushController(withName: "Par TIme Controller", context: startDelay)
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
    
     @IBAction func presetThreePress() {
         startDelay = 4.0;
         pushController(withName: "Par TIme Controller", context: startDelay)
-        
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
     @IBAction func presetFourPress() {
         startDelay = 5.0;
         pushController(withName: "Par TIme Controller", context: startDelay)
-        
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
     
     @IBAction func randomStartPress() {
@@ -63,6 +65,7 @@ class StartInterfaceController: WKInterfaceController  {
         
         startDelay = Double(tempDelay)
         pushController(withName: "Par TIme Controller", context: startDelay)
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
     
     

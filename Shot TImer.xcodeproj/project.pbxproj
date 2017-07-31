@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42081FD31F2E385A00B061C2 /* Test in Resources */ = {isa = PBXBuildFile; fileRef = 42431E011F2E352700D4BB69 /* Test */; };
+		42431DFE1F2E1AE000D4BB69 /* Circle Button - Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 42431DFD1F2E1AE000D4BB69 /* Circle Button - Red.png */; };
+		42431E001F2E1AEB00D4BB69 /* Rectangle Button - Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 42431DFF1F2E1AEB00D4BB69 /* Rectangle Button - Red.png */; };
 		8B3D49311F20F2B500BE5242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D49301F20F2B500BE5242 /* AppDelegate.swift */; };
 		8B3D49331F20F2B500BE5242 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D49321F20F2B500BE5242 /* ViewController.swift */; };
 		8B3D49361F20F2B500BE5242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D49341F20F2B500BE5242 /* Main.storyboard */; };
@@ -23,12 +26,11 @@
 		8B3D49701F20F2B500BE5242 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D496F1F20F2B500BE5242 /* NotificationController.swift */; };
 		8B3D49721F20F2B500BE5242 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D49711F20F2B500BE5242 /* ComplicationController.swift */; };
 		8B3D49741F20F2B500BE5242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D49731F20F2B500BE5242 /* Assets.xcassets */; };
-		8B3D49901F21066200BE5242 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D498F1F21066200BE5242 /* Button.png */; };
-		8B3D49921F211D3100BE5242 /* Big Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D49911F211D3100BE5242 /* Big Button.png */; };
 		8B695AB61F21543400CE9E2C /* PickerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B695AB31F21543400CE9E2C /* PickerInterfaceController.swift */; };
 		8B695AB91F2164A900CE9E2C /* ParTimeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B695AAF1F21506C00CE9E2C /* ParTimeInterfaceController.swift */; };
 		8BEE3FA21F2243A000EE8F80 /* ReadyInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE3FA11F2243A000EE8F80 /* ReadyInterfaceController.swift */; };
 		8BEE3FA41F23008B00EE8F80 /* TimerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE3FA31F23008B00EE8F80 /* TimerInterfaceController.swift */; };
+		8BEF87EB1F27713C00FC22B2 /* ParTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEF87EA1F27713C00FC22B2 /* ParTimeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		42431DFD1F2E1AE000D4BB69 /* Circle Button - Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Circle Button - Red.png"; path = "../../../Downloads/Circle Button - Red.png"; sourceTree = "<group>"; };
+		42431DFF1F2E1AEB00D4BB69 /* Rectangle Button - Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle Button - Red.png"; path = "../../../Downloads/Rectangle Button - Red.png"; sourceTree = "<group>"; };
+		42431E011F2E352700D4BB69 /* Test */ = {isa = PBXFileReference; explicitFileType = audio.wav; name = Test; path = ../../../Downloads/Test; sourceTree = "<group>"; };
 		8B3D492D1F20F2B500BE5242 /* Shot TImer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shot TImer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3D49301F20F2B500BE5242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B3D49321F20F2B500BE5242 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,13 +118,12 @@
 		8B3D49711F20F2B500BE5242 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		8B3D49731F20F2B500BE5242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3D49751F20F2B500BE5242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B3D498F1F21066200BE5242 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button.png; path = ../../../Downloads/Button.png; sourceTree = "<group>"; };
-		8B3D49911F211D3100BE5242 /* Big Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Big Button.png"; path = "../../../Downloads/Big Button.png"; sourceTree = "<group>"; };
 		8B695AAC1F214FFE00CE9E2C /* Shot TImer WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shot TImer WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
 		8B695AAF1F21506C00CE9E2C /* ParTimeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParTimeInterfaceController.swift; sourceTree = "<group>"; };
 		8B695AB31F21543400CE9E2C /* PickerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerInterfaceController.swift; sourceTree = "<group>"; };
 		8BEE3FA11F2243A000EE8F80 /* ReadyInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyInterfaceController.swift; sourceTree = "<group>"; };
 		8BEE3FA31F23008B00EE8F80 /* TimerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerInterfaceController.swift; sourceTree = "<group>"; };
+		8BEF87EA1F27713C00FC22B2 /* ParTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParTimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,7 @@
 				8B3D49301F20F2B500BE5242 /* AppDelegate.swift */,
 				8B3D49321F20F2B500BE5242 /* ViewController.swift */,
 				8B3D49341F20F2B500BE5242 /* Main.storyboard */,
+				8BEF87EA1F27713C00FC22B2 /* ParTimeViewController.swift */,
 				8B3D49371F20F2B500BE5242 /* Assets.xcassets */,
 				8B3D49391F20F2B500BE5242 /* LaunchScreen.storyboard */,
 				8B3D493C1F20F2B500BE5242 /* Info.plist */,
@@ -212,10 +217,10 @@
 		8B3D49591F20F2B500BE5242 /* Shot TImer WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				8B3D49911F211D3100BE5242 /* Big Button.png */,
-				8B3D498F1F21066200BE5242 /* Button.png */,
 				8B3D495A1F20F2B500BE5242 /* Interface.storyboard */,
 				8B3D495D1F20F2B500BE5242 /* Assets.xcassets */,
+				42431DFD1F2E1AE000D4BB69 /* Circle Button - Red.png */,
+				42431DFF1F2E1AEB00D4BB69 /* Rectangle Button - Red.png */,
 				8B3D495F1F20F2B500BE5242 /* Info.plist */,
 			);
 			path = "Shot TImer WatchKit App";
@@ -224,6 +229,7 @@
 		8B3D49681F20F2B500BE5242 /* Shot TImer WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				42431E011F2E352700D4BB69 /* Test */,
 				8B3D496B1F20F2B500BE5242 /* StartInterfaceController.swift */,
 				8B695AAF1F21506C00CE9E2C /* ParTimeInterfaceController.swift */,
 				8B695AB31F21543400CE9E2C /* PickerInterfaceController.swift */,
@@ -429,10 +435,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42431DFE1F2E1AE000D4BB69 /* Circle Button - Red.png in Resources */,
+				42431E001F2E1AEB00D4BB69 /* Rectangle Button - Red.png in Resources */,
 				8B3D495E1F20F2B500BE5242 /* Assets.xcassets in Resources */,
 				8B3D495C1F20F2B500BE5242 /* Interface.storyboard in Resources */,
-				8B3D49901F21066200BE5242 /* Button.png in Resources */,
-				8B3D49921F211D3100BE5242 /* Big Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42081FD31F2E385A00B061C2 /* Test in Resources */,
 				8B3D49741F20F2B500BE5242 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3D49331F20F2B500BE5242 /* ViewController.swift in Sources */,
+				8BEF87EB1F27713C00FC22B2 /* ParTimeViewController.swift in Sources */,
 				8B3D49311F20F2B500BE5242 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,11 +647,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 255ET92M8M;
 				INFOPLIST_FILE = "Shot TImer WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImer.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -656,11 +666,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 255ET92M8M;
 				INFOPLIST_FILE = "Shot TImer WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftApp.Shot-TImer.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -716,6 +728,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 255ET92M8M;
 				INFOPLIST_FILE = "Shot TImer/Info.plist";
@@ -724,6 +737,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -731,6 +745,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 255ET92M8M;
 				INFOPLIST_FILE = "Shot TImer/Info.plist";
@@ -739,6 +754,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

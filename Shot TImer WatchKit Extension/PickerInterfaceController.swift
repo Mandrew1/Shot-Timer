@@ -52,7 +52,7 @@ class PickerInterfaceController: WKInterfaceController {
             
         }
         
-        while yMilli <= 1 {
+        while yMilli <= 0.9 {
     
             let millisecondsItem = WKPickerItem()
             millisecondsItem.title = "\(yMilli)"
@@ -82,16 +82,15 @@ class PickerInterfaceController: WKInterfaceController {
     @IBAction func secondPicked(_ value: Int) {
         print("Selected seconds \(value)")
         selectedSeconds = Double(value)
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
     
     @IBAction func millisecondPicked(_ fvalue: Int) {
-        let xmillis : Double = (millisecondsItems[fvalue].title as! NSString).doubleValue
+        let xmillis : Double = (millisecondsItems[fvalue].title! as NSString).doubleValue
         selectedMilliseconds = xmillis
         print("\(selectedMilliseconds)")
-        
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
-    
-    //TO DO PASS SELECTED VALUES TO END SCREEN
     
     @IBAction func confirmButtonPress() {
         print("confirm")
@@ -101,6 +100,7 @@ class PickerInterfaceController: WKInterfaceController {
         print("finalParT\(finalParT)")
         parTandD.append(finalParT)
         pushController(withName: "Ready Interface Controller", context: parTandD)
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
     
     

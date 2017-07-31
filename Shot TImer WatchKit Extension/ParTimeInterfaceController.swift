@@ -39,12 +39,14 @@ class ParTimeInterfaceController: WKInterfaceController {
         parTime = 1.0
          startDelayAndParTime.append(parTime)
         pushController(withName: "Ready Interface Controller", context: startDelayAndParTime)
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
     
     @IBAction func parPresetTwo() {
         parTime = 2.0
         startDelayAndParTime.append(parTime)
         pushController(withName: "Ready Interface Controller", context: startDelayAndParTime)
+        WKInterfaceDevice.current().play(WKHapticType.click)
        
     }
     
@@ -52,27 +54,32 @@ class ParTimeInterfaceController: WKInterfaceController {
         parTime = 3.0
         startDelayAndParTime.append(parTime)
         pushController(withName: "Ready Interface Controller", context: startDelayAndParTime)
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
     
     @IBAction func parPresetFour() {
         parTime = 4.0
         startDelayAndParTime.append(parTime)
         pushController(withName: "Ready Interface Controller", context: startDelayAndParTime)
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
     
     @IBAction func parPresetFive() {
         parTime = 5.0
         startDelayAndParTime.append(parTime)
         pushController(withName: "Ready Interface Controller", context: startDelayAndParTime)
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
     
     @IBAction func parPresetSix() {
         parTime = 6.0
         startDelayAndParTime.append(parTime)
         pushController(withName: "Ready Interface Controller", context: startDelayAndParTime)
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
     
     @IBAction func customTimeButton() {
         pushController(withName: "Picker Interface Controller", context: startDelayAndParTime)
+        WKInterfaceDevice.current().play(WKHapticType.click)
     }
 }
